@@ -32,7 +32,7 @@ class Jetpack_Sync {
 
 		add_action( 'jetpack_activate_module', array( $this, 'sync_module_constants' ), 10, 1 );
 
-		add_action( 'automatic_updates_complete' array( $this, 'log_automatic_updates', 999, 1 );
+		add_action( 'automatic_updates_complete', array( $this, 'log_automatic_updates', 999, 1 );
 	}
 
 /* Static Methods for Modules */
