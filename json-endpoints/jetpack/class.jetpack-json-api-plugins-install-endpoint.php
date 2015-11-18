@@ -183,7 +183,7 @@ class Jetpack_Automatic_Plugin_Install_Skin extends Automatic_Upgrader_Skin {
 			'strong' => true,
 		) );
 
-		if ( $string )
+		if ( empty( $string ) )
 			return;
 
 		$this->set_main_error_message( $string, $current_error );
