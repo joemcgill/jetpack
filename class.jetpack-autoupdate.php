@@ -103,7 +103,7 @@ class Jetpack_Autoupdate {
 		}
 
 		// grab only the last month of logs
-		$log = slice( Jetpack_Options::get_option( 'updates_log', array() ), 0, 59 );
+		$log = array_slice( Jetpack_Options::get_option( 'updates_log', array() ), 0, 59 );
 		// Append our event to the log
 		$log[] = array(
 			'time'		=> time(),
