@@ -173,7 +173,6 @@ class Jetpack_Automatic_Plugin_Install_Skin extends Automatic_Upgrader_Skin {
 		}
 
 		$string = trim( $string );
-
 		$string = wp_kses( $string, array(
 			'a' => array(
 				'href' => true
@@ -182,9 +181,6 @@ class Jetpack_Automatic_Plugin_Install_Skin extends Automatic_Upgrader_Skin {
 			'em' => true,
 			'strong' => true,
 		) );
-
-		if ( empty( $string ) )
-			return;
 
 		$this->set_main_error_message( $string, $current_error );
 		$this->messages[] = $string;
